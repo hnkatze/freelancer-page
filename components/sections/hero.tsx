@@ -218,10 +218,17 @@ function AuroraBackground({
 }: {
   prefersReducedMotion: boolean;
 }) {
+  const [mounted, setMounted] = useState(false);
   const { resolvedTheme } = useTheme();
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
   // Orbs rely on mix-blend-screen which is a no-op on light backgrounds.
   // Skip rendering entirely on light — hero still has its radial decoration.
-  if (resolvedTheme !== "dark") return null;
+  // Wait for mount so server and first client render match.
+  if (!mounted || resolvedTheme !== "dark") return null;
 
   return (
     <div
@@ -345,16 +352,9 @@ export function Hero() {
   const t = useTranslations("hero");
   const prefersReducedMotion = useReducedMotion() ?? false;
 
-  // Ref used by useScroll to track hero section scroll progress
-  const heroRef = useRef<HTMLElement>(null);
-
-  // Parallax: as hero scrolls from [start start] to [end start],
-  // the bento grid drifts up by 120px (slow drift = deeper feel)
-  const { scrollYProgress } = useScroll({
-    target: heroRef,
-    offset: ["start start", "end start"],
-  });
-  const parallaxY = useTransform(scrollYProgress, [0, 1], [0, -120]);
+  // Parallax based on global page scroll to avoid container offset warnings.
+  const { scrollY } = useScroll();
+  const parallaxY = useTransform(scrollY, [0, 800], [0, -120]);
 
   const titlePre = t("title_pre");
   const titleKeyword = t("title_keyword");
@@ -364,7 +364,6 @@ export function Hero() {
 
   return (
     <section
-      ref={heroRef}
       className="relative overflow-hidden py-24 lg:py-40"
       aria-labelledby="hero-heading"
     >

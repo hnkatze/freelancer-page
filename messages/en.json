@@ -1,0 +1,148 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "team": "Team",
+    "projects": "Projects",
+    "contact": "Contact",
+    "menu_open": "Open menu",
+    "menu_close": "Close menu"
+  },
+  "hero": {
+    "badge": "web · mobile · automation",
+    "title_pre": "We ship",
+    "title_keyword": "complete systems",
+    "subtitle": "Web apps, mobile apps, and n8n / Zapier automations — engineered by a small team that thinks in architectures, not slide decks.",
+    "cta_primary": "Start a project",
+    "cta_secondary": "See our work",
+    "thumb_1_title": "REST API",
+    "thumb_1_caption": "NestJS · 130+ endpoints",
+    "thumb_2_title": "Mobile App",
+    "thumb_2_caption": "Flutter · iOS + Android",
+    "thumb_3_title": "Automation",
+    "thumb_3_caption": "n8n · 20+ workflows",
+    "thumb_4_title": "Landing Site",
+    "thumb_4_caption": "Astro · Edge-rendered"
+  },
+  "stats": {
+    "eyebrow": "BY THE NUMBERS",
+    "projects": { "label": "projects shipped" },
+    "endpoints": { "label": "REST endpoints" },
+    "modules": { "label": "ERP modules" },
+    "clients": { "label": "happy clients" }
+  },
+  "tech_marquee": {
+    "label": "We work with"
+  },
+  "services": {
+    "eyebrow": "SERVICES",
+    "title": "What we ship",
+    "subtitle": "Three pillars, fully typed, production-ready from day one.",
+    "web": {
+      "title": "Web Development",
+      "description": "Next.js, Angular, Astro, React. Server Components, streaming, edge rendering. TypeScript strict, accessible by default."
+    },
+    "mobile": {
+      "title": "Mobile Development",
+      "description": "Flutter, React Native, Ionic. Native iOS + Android performance, offline-first data, clean architecture."
+    },
+    "automation": {
+      "title": "Automations",
+      "description": "n8n and Zapier pipelines that hold. Custom MCP servers, CI/CD, AI-assisted workflows."
+    }
+  },
+  "team": {
+    "eyebrow": "TEAM",
+    "title": "The people behind the code",
+    "subtitle": "Three engineers, not an agency org chart. You talk to the people who write the code.",
+    "roles": {
+      "fullstack": "Full-Stack Engineer",
+      "mobile": "Mobile Engineer",
+      "fullstack_ai": "Full-Stack · AI Tooling"
+    },
+    "bios": {
+      "alejandro": "Founder. REST APIs at scale, MCP servers, AI-assisted dev workflows.",
+      "valeria": "Full-stack engineer. React, Angular, Node — end-to-end features that hold.",
+      "mateo": "Mobile engineer. Flutter + React Native craftsman. Pixel-perfect UI, native performance."
+    }
+  },
+  "projects": {
+    "eyebrow": "SELECTED WORK",
+    "title": "Recent projects",
+    "subtitle": "A slice of what we've shipped — full systems, from API to UI.",
+    "view_project": "View project",
+    "items": {
+      "delivery": {
+        "title": "On-demand delivery platform",
+        "summary": "Cross-platform delivery app with real-time dispatch, live tracking, and driver settlement. Backend handles 10K+ daily orders."
+      },
+      "backoffice": {
+        "title": "Enterprise ERP · 120+ modules",
+        "summary": "Back-office suite covering finance, HR, logistics, and compliance. Role-based access across 30+ user types."
+      },
+      "pos": {
+        "title": "Restaurant POS system",
+        "summary": "Hybrid POS for a national restaurant chain. Offline-first order capture, split bills, kitchen display sync."
+      },
+      "fintech": {
+        "title": "Fintech analytics dashboard",
+        "summary": "B2B dashboard with real-time transaction streams, anomaly alerts, and configurable KPIs. Sub-100ms query latency."
+      },
+      "realestate": {
+        "title": "Real-estate landing + blog",
+        "summary": "Static-first marketing site with CMS-driven listings, MDX blog, and image optimization. 100/100 Lighthouse."
+      },
+      "aiagent": {
+        "title": "AI support agent",
+        "summary": "Customer support agent with a custom MCP server exposing internal tools. Handles tier-1 tickets autonomously."
+      },
+      "automation": {
+        "title": "n8n automation stack",
+        "summary": "20+ workflows orchestrating lead capture, AI summarization, CRM sync, and invoice generation."
+      },
+      "fitness": {
+        "title": "Fitness & health app",
+        "summary": "Cross-platform fitness tracker with workout plans, wearable sync, and subscription billing."
+      }
+    }
+  },
+  "contact": {
+    "eyebrow": "CONTACT",
+    "title": "Start a project",
+    "subtitle": "Tell us what you're building. We usually reply within 24 hours.",
+    "form": {
+      "name": "Name",
+      "name_placeholder": "Your name",
+      "email": "Email",
+      "email_placeholder": "you@company.com",
+      "message": "What do you need?",
+      "message_placeholder": "A short description of the problem you want solved.",
+      "submit": "Send message",
+      "submitting": "Sending…",
+      "success": "Thanks — we'll be in touch.",
+      "error": "Something went wrong. Please try again."
+    }
+  },
+  "footer": {
+    "tagline": "Axiom — a small engineering team shipping complete systems.",
+    "rights": "All rights reserved.",
+    "sections": {
+      "product": "Product",
+      "team": "Team",
+      "legal": "Legal"
+    },
+    "privacy": "Privacy",
+    "terms": "Terms"
+  },
+  "theme": {
+    "toggle": "Toggle theme",
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
+  },
+  "locale": {
+    "switch": "Language",
+    "en": "English",
+    "es": "Español"
+  }
+}
